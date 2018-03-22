@@ -72,8 +72,16 @@ projects_data.projects.forEach( (project) => {
 
 // adding other projects
 html += `<article>`;
-html += `<h2>${ projects_data.other_projects.title }</h2>`;
-html += `<p>${ projects_data.other_projects.content }</p>`;
+html += `<h2>S1mple Math</h2>`;
+html += `<p><a target="_blank" href="http://simplemath.jasonfigueroa.io">S1mple Math</a> is a project I started during the winter of 2017. It is an application geared towards first grade level math students. I wanted to make something fun that would keep the user engaged while polishing their math skills.</p>`;
+html += `<p>The app was built with AngularJS, Bootstrap, and Firebase.</p>`;
+html += `<img src="images/simplemath2.PNG" />`;
+html += `</article>`;
+
+html += `<article class="article-below-image">`;
+html += `<h2>CSGSI Stat Trakr</h2>`;
+html += `<p><a target="_blank" href="https://csgsistattrakr.jasonfigueroa.io">CSGSI Stat Trakr</a> is an application designed to capture player data while playing Counter-Strike: Global Offensive, a popular first-person shooter for PC. The application consists of a desktop application which integrates with the game and captures data in real-time, an API which receives and stores the data captured and a web client a user can interact with to view their captured data. For a more detailed description of the application please visit <a target="_blank" href="https://csgsistattrakr.jasonfigueroa.io/About">the about page</a>. For a more technical description of the project please visit the <a target="_blank" href="https://csgsistattrakr.jasonfigueroa.io/TechnicalDetails">Technical Details page</a>.</p>`;
+html += `<img src="images/csgsistattrakr.PNG" />`;
 html += `</article>`;
 
 document.getElementById("projects").innerHTML += html;

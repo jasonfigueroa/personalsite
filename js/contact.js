@@ -9,9 +9,9 @@ const contactData = {
             text: "Checkout my GitHub"
         },
             twitter: {
-                href: "https://twitter.com/jasonfigueroa_",
-                icon: "fa-twitter",
-                text: "Follow me on Twitter"
+                href: "https://www.linkedin.com/in/jason-figueroa-b59a3798/",
+                icon: "fa fa-linkedin-square",
+                text: "Checkout my Linkedin"
         }
     }
 
@@ -34,7 +34,7 @@ for(key in extractedData) {
     for(platform in platformsObj) {
         let platformName = platformsObj[platform];
         html += `<article>
-        <p><a href="${platformName.href}"><i class="fa ${platformName.icon}" aria-hidden="true"></i> ${platformName.text}</a></p>
+        <p><a target="_blank" href="${platformName.href}"><i class="fa ${platformName.icon}" aria-hidden="true"></i> ${platformName.text}</a></p>
         </article>`
     }
     
